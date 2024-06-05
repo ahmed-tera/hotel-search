@@ -10,26 +10,38 @@
     <div class="search-box">
         <h2>Search Hotel</h2>
         <form id="search-form">
-            <label for="from-date">From Date</label>
-            <input type="date" id="from-date" name="from-date">
-            <label for="to-date">To Date</label>
-            <input type="date" id="to-date" name="to-date">
-            <label for="governorate">Governorates</label>
-            <select id="governorate" name="governorate">
-                <!-- سيتم ملء المحافظات هنا -->
-            </select>
-            <label for="hotel">Hotels</label>
-            <select id="hotel" name="hotel">
-                <!-- سيتم ملء الفنادق هنا -->
-            </select>
-            <label for="room">Rooms</label>
-            <select id="room" name="room">
-                <option value="">Select Room</option>
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="suite">Suite</option>
-            </select>
-            <button type="submit">Search</button>
+            <div>
+                <label for="from-date">From Date</label>
+                <input type="date" id="from-date" name="from-date">
+            </div>
+            <div>
+                <label for="to-date">To Date</label>
+                <input type="date" id="to-date" name="to-date">
+            </div>
+            <div>
+                <label for="governorate">Governorates</label>
+                <select id="governorate" name="governorate">
+                    <!-- سيتم ملء المحافظات هنا -->
+                </select>
+            </div>
+            <div>
+                <label for="hotel">Hotels</label>
+                <select id="hotel" name="hotel">
+                    <!-- سيتم ملء الفنادق هنا -->
+                </select>
+            </div>
+            <div>
+                <label for="room">Rooms</label>
+                <select id="room" name="room">
+                    <option value="">Select Room</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
         </form>
     </div>
     <script src="script.js"></script>
