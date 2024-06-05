@@ -3,47 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Search</title>
+    <title>Hotel Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="search-box">
-        <h2>Search Hotel</h2>
-        <form id="search-form">
-            <div>
-                <label for="from-date">From Date</label>
-                <input type="date" id="from-date" name="from-date">
-            </div>
-            <div>
-                <label for="to-date">To Date</label>
-                <input type="date" id="to-date" name="to-date">
-            </div>
-            <div>
-                <label for="governorate">Governorates</label>
-                <select id="governorate" name="governorate">
-                    <!-- سيتم ملء المحافظات هنا -->
-                </select>
-            </div>
-            <div>
-                <label for="hotel">Hotels</label>
-                <select id="hotel" name="hotel">
-                    <!-- سيتم ملء الفنادق هنا -->
-                </select>
-            </div>
-            <div>
-                <label for="room">Rooms</label>
-                <select id="room" name="room">
-                    <option value="">Select Room</option>
-                    <option value="single">Single</option>
-                    <option value="double">Double</option>
-                    <option value="suite">Suite</option>
-                </select>
-            </div>
-            <div>
-                <button type="submit">Search</button>
-            </div>
-        </form>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+                <div class="sidebar-sticky">
+                    <h4 class="text-center text-white mt-3">TeraTrav</h4>
+                    <div class="sidebar-content text-center">
+                        <img src="https://via.placeholder.com/150" alt="Logo" class="img-fluid my-3">
+                        <p class="text-white">Al-Ahly Shopping</p>
+                    </div>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                </div>
+
+                <h2>Search Hotel</h2>
+                <div class="search-box mb-4">
+                    <form id="search-form" class="form-inline">
+                        <div class="form-group mb-2">
+                            <label for="from-date" class="mr-2">From Date</label>
+                            <input type="date" class="form-control" id="from-date" name="from-date">
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="to-date" class="mr-2">To Date</label>
+                            <input type="date" class="form-control" id="to-date" name="to-date">
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="governorate" class="mr-2">Governorates</label>
+                            <select class="form-control" id="governorate" name="governorate">
+                                <!-- المحافظات هنا -->
+                            </select>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="hotel" class="mr-2">Hotels</label>
+                            <select class="form-control" id="hotel" name="hotel">
+                                <!-- الفنادق هنا -->
+                            </select>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="room" class="mr-2">Rooms</label>
+                            <select class="form-control" id="room" name="room">
+                                <option value="">Select Room</option>
+                                <option value="single">Single</option>
+                                <option value="double">Double</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Search</button>
+                    </form>
+                </div>
+
+                <h2>منتجع جراند اوسيس</h2>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>From Date</th>
+                                <th>To Date</th>
+                                <th>Status</th>
+                                <th>Hotel Room Details</th>
+                                <th>Rate</th>
+                                <th>Phone No</th>
+                                <th>Remarks</th>
+                                <th>Nationality</th>
+                                <th>Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>27/03/2023</td>
+                                <td>21/04/2023</td>
+                                <td>Initiated</td>
+                                <td>
+                                    <button class="btn btn-info btn-sm">Info</button>
+                                    <button class="btn btn-success btn-sm">Show Dates</button>
+                                </td>
+                                <td>★★★★★</td>
+                                <td>69 3603930</td>
+                                <td>LOCAL MARKET</td>
+                                <td>Hard All Inclusive</td>
+                                <td>LOCAL MARKET</td>
+                            </tr>
+                            <!-- المزيد من الصفوف هنا -->
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
