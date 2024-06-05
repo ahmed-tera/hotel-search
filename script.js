@@ -35,4 +35,34 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    // إضافة محافظة جديدة
+    document.getElementById('add-governorate').addEventListener('click', function() {
+        const newGovernorate = prompt("Enter the name of the new governorate:");
+        if (newGovernorate) {
+            governorates.push(newGovernorate);
+            const option = document.createElement('option');
+            option.value = newGovernorate;
+            option.textContent = newGovernorate;
+            governorateSelect.appendChild(option);
+            hotels[newGovernorate] = [];
+        }
+    });
+
+    // إضافة فندق جديد
+    document.getElementById('add-hotel').addEventListener('click', function() {
+        const selectedGovernorate = governorateSelect.value;
+        if (selectedGovernorate) {
+            const newHotel = prompt(`Enter the name of the new hotel in ${selectedGovernorate}:`);
+            if (newHotel) {
+                hotels[selectedGovernorate].push(newHotel);
+                const option = document.createElement('option');
+                option.value = newHotel;
+                option.textContent = newHotel;
+                hotelSelect.appendChild(option);
+            }
+        } else {
+            alert("Please select a governorate first.");
+        }
+    });
 });
