@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const governorates = ["Cairo", "Alexandria", "Giza", "Luxor", "Aswan", "Hurghada", "Sharm El-Sheikh"];
+    const governorates = governorates = ["Cairo", "Alexandria", "Giza", "Luxor", "Aswan", "Hurghada", "Sharm El-Sheikh"];
     const hotels = {
         "Cairo": ["Fairmont", "Kempinski", "Conrad", "Four Seasons"],
         "Alexandria": ["Hotel1 Alexandria", "Hotel2 Alexandria"],
