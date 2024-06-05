@@ -26,3 +26,16 @@ body {
     padding: 20px;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .sidebar-sticky {
+        position: relative;
+    }
+    .sidebar-content img {
+        width: 50%;
+    }
+}
