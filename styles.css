@@ -13,30 +13,42 @@ body {
     background-color: #444;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 800px; /* تعديل العرض ليكون أعرض */
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    margin-bottom: 20px;
+    background-color: #2a7baf; /* لون الخلفية للرأس */
+    color: #fff;
+    margin: -20px -20px 20px -20px;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 label {
     display: block;
-    margin: 10px 0 5px;
+    margin-bottom: 5px;
 }
 
 input, select, button {
-    width: 100%;
+    width: calc(25% - 10px); /* تعديل العرض ليكون ربع العرض الكلي */
     padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+    background-color: #555;
+    color: #fff;
 }
 
 button {
-    background-color: #0066cc;
+    background-color: #2a7baf;
     color: #fff;
     cursor: pointer;
 }
@@ -45,3 +57,6 @@ button:hover {
     background-color: #0055a5;
 }
 
+input[type="date"] {
+    padding: 5px;
+}
