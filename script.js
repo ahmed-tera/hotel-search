@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const governorates = ["Cairo", "Alexandria", "Giza", "Luxor", "Aswan"];
+    const governorates = ["Cairo", "Alexandria", "Giza", "Luxor", "Aswan", "Hurghada", "Sharm El-Sheikh"];
     const hotels = {
-        "Cairo": ["Hotel1 Cairo", "Hotel2 Cairo"],
+        "Cairo": ["Fairmont", "Kempinski", "Conrad", "Four Seasons"],
         "Alexandria": ["Hotel1 Alexandria", "Hotel2 Alexandria"],
         "Giza": ["Hotel1 Giza", "Hotel2 Giza"],
         "Luxor": ["Hotel1 Luxor", "Hotel2 Luxor"],
-        "Aswan": ["Hotel1 Aswan", "Hotel2 Aswan"]
+        "Aswan": ["Hotel1 Aswan", "Hotel2 Aswan"],
+        "Hurghada": ["Fairmont Hurghada", "Kempinski Hurghada"],
+        "Sharm El-Sheikh": ["Four Seasons Sharm", "Kempinski Sharm"]
     };
 
     const governorateSelect = document.getElementById('governorate');
